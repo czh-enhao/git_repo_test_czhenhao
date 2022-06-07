@@ -1,1 +1,71 @@
 git status - check status of stuff to git
+
+1. cd into the folder
+2. git add folder_name/    - add folder to commit
+
+1. git commit -a -m "commit summary message"    - commit changes to the forked repo
+2. git push                                     - push changes to forked repo
+
+terminal log
+================================================================================
+zhenhaoc:git_repo_test_czhenhao zhenhaoc$ git add gobyexample/
+zhenhaoc:git_repo_test_czhenhao zhenhaoc$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   gobyexample/arrays/arrays.go
+        new file:   gobyexample/constants/constants
+        new file:   gobyexample/constants/constants.go
+        new file:   gobyexample/for/for.go
+        new file:   gobyexample/hello_world/hello-world
+        new file:   gobyexample/hello_world/hello-world.go
+        new file:   gobyexample/ifelse/ifelse.go
+        new file:   gobyexample/slices/slices.go
+        new file:   gobyexample/switch/switch.go
+        new file:   gobyexample/values/values
+        new file:   gobyexample/values/values.go
+        new file:   gobyexample/variables/variables
+        new file:   gobyexample/variables/variables.go
+==================================================================================
+
+==================================================================================
+zhenhaoc:git_repo_test_czhenhao zhenhaoc$ git commit -a -m "some go examples done"
+[main 292b734] some go examples done
+ 13 files changed, 238 insertions(+)
+ create mode 100644 gobyexample/arrays/arrays.go
+ create mode 100755 gobyexample/constants/constants
+ create mode 100644 gobyexample/constants/constants.go
+ create mode 100644 gobyexample/for/for.go
+ create mode 100755 gobyexample/hello_world/hello-world
+ create mode 100644 gobyexample/hello_world/hello-world.go
+ create mode 100644 gobyexample/ifelse/ifelse.go
+ create mode 100644 gobyexample/slices/slices.go
+ create mode 100644 gobyexample/switch/switch.go
+ create mode 100755 gobyexample/values/values
+ create mode 100644 gobyexample/values/values.go
+ create mode 100755 gobyexample/variables/variables
+ create mode 100644 gobyexample/variables/variables.go
+zhenhaoc:git_repo_test_czhenhao zhenhaoc$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+==================================================================================
+
+==================================================================================
+zhenhaoc:git_repo_test_czhenhao zhenhaoc$ git push
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (25/25), 1.81 MiB | 3.54 MiB/s, done.
+Total 25 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+To https://github.com/c-zhenhao/git_repo_test_czhenhao.git
+   9a6b43d..292b734  main -> main
+==================================================================================
+
+to figure out pull request from CLI lol
